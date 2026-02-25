@@ -5,51 +5,18 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // Layer 0
-            display-name = "Base";
+        layer_0 {
             bindings = <
-                &kp A    &kp B       &kp C
-                &mo D    &kp E  &mo F
-                &kp G    &kp H       &kp I
-                &kp J    &kp K  &mo 1
-                &mo 2    &mo 3   
-            >;
-        };
-        B { // Layer 1
-            display-name = "B";
-            bindings = <
-                &kp 1    &kp 2       &kp 3
-                &mo D    &kp E  &mo F
-                &kp G    &kp H       &kp I
-                &kp J    &kp K  &mo 1
-                &mo 2    &mo 3   
-            >;
-        };
-        C { // Layer 2
-            display-name = "C";
-            bindings = <
-                &kp 4    &kp 5       &kp 6
-                &mo D    &kp E  &mo F
-                &kp G    &kp H       &kp I
-                &kp J    &kp K  &mo 1
-                &mo 2    &mo 3   
-            >;
-        };
-        D{ // Layer 3
-            display-name = "D";
-            bindings = <
-                &kp 7    &kp 8       &kp 9
-                &mo D    &kp E  &mo F
-                &kp G    &kp H       &kp I
-                &kp J    &kp K  &mo 1
-                &mo 2    &mo 3   
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
