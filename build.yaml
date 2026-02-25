@@ -17,5 +17,5 @@
 
 ---
 include:
-  - board: nice_nano_nrf52840_zmk
+  - board: NRF52840DK
     shield: contra
