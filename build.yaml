@@ -17,5 +17,5 @@
 
 ---
 include:
-  - board: nice_nano
+  - board: nrf52840dongle_nrf52840_zmk
     shield: tester_pro_micro
