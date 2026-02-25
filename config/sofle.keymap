@@ -12,11 +12,7 @@
 
         layer_0 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             >;
         };
     };
