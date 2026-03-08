@@ -18,5 +18,5 @@
 ---
 
 include:
-  - board: nice_nano@2.0.0
+  - board: nice_nano@2.0.0//zmk
     shield: splitkb_aurora_sofle_left
