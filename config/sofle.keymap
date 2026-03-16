@@ -3,9 +3,10 @@
  *
  * SPDX-License-Identifier: MIT
  */
-// #define ZMK_POINTING_DEFAULT_MOVE_VAL 200  
+
+// #define ZMK_POINTING_DEFAULT_MOVE_VAL 400  
 // default: 600
-// #define ZMK_POINTING_DEFAULT_SCRL_VAL 7    
+// #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    
 // default: 10
 
 #include <behaviors.dtsi>
@@ -25,86 +26,24 @@
         };
     };
 
+    behaviors {
+      skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <2000>;
+      };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &none         
-&kp CAPS      &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
+&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &kp CAPS        
+&kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
 &kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
-            >;
-        };
-
-        layer_1 {
-            bindings = <
-&mkp LCLK       &mmv MOVE_DOWN  &kp ENTER      &to 2        &kp PAGE_DOWN  &to 0         
-&mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mkp RCLK     &kp HOME     &kp END        &none
-&mmv MOVE_UP    &to 3           &kp BACKSPACE  &kp PAGE_UP  &trans         &trans
-            >;
-        };
-
-        layer_2 {
-            bindings = <
-&kp LEFT_SHIFT  &msc SCRL_DOWN  &sk ESCAPE     &none         &kp DOWN_ARROW  &to 0         
-&msc SCRL_LEFT  &msc SCRL_RIGHT  &kp ENTER  &kp LEFT_ARROW  &kp RIGHT_ARROW  &to 1
-&msc SCRL_UP    &to 3           &sk BACKSPACE  &kp UP_ARROW  &trans          &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&sk LEFT_SHIFT  &kp NUMBER_2  &kp NUMBER_9  &to 7         &kp NUMBER_8  &to 0         
-&kp NUMBER_2  &kp NUMBER_4  &sk LCTRL  &kp NUMBER_6  &kp NUMBER_7  &to 4
-&kp NUMBER_1    &none         &kp NUMBER_0  &kp NUMBER_5  &trans        &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&kp BACKSPACE  &kp S  &to 5  &to 7  &kp V   &to 0         
-&kp A  &kp D  &kp SPACE  &kp I  &kp O  &kp DELETE
-&kp W          &to 3  &to 6  &kp U  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&kp BACKSPACE  &kp N  &kp X  &to 7  &kp Z   &to 0         
-&kp Q  &kp M  &kp SPACE  &kp J  &kp L  &to 4
-&kp P          &to 3  &to 6  &kp K  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&kp BACKSPACE  &kp G  &to 5  &to 7  &kp B   &to 0         
-&kp C  &kp H  &kp SPACE  &kp R  &kp F  &to 4
-&kp E          &to 3  &kp Y  &kp T  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&sk LEFT_SHIFT        &kp SLASH  &kp COMMA   &none      &kp MINUS  &to 0         
-&kp SEMICOLON  &kp SQT  &sk LCTRL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &to 4
-&kp NON_US_BACKSLASH  &to 3      &kp PERIOD  &kp EQUAL  &trans     &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&kp F11  &kp F1  &kp F9   &to 2   &kp F5  &to 0         
-&kp F2  &kp F3  &kp F12  &kp F6  &kp F7  &to 1
-&kp F4   &to 3   &kp F10  &kp F6  &trans  &trans
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&kp TAB     &studio_unlock  &none  &none       &bt BT_NXT  &to 0         
-&none  &none  &kp LEFT_ALT  &bt BT_SEL 0  &bt BT_CLR  &to 2
-&kp DELETE  &to 1           &none  &bt BT_PRV  &trans      &trans
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
             >;
         };
     };
