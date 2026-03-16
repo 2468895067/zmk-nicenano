@@ -46,5 +46,50 @@
 &kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
             >;
         };
+
+        layer_1 {
+            bindings = <
+&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &kp CAPS        
+&kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &kp CAPS        
+&kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &kp CAPS        
+&kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &kp CAPS        
+&kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &kp CAPS        
+&kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+            >;
+        };
     };
 };
