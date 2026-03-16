@@ -1,0 +1,6 @@
+# Copyright (c) 2020 Ryan Cross
+# SPDX-License-Identifier: MIT
+
+config SHIELD_SOFLE_J
+    def_bool $(shields_list_contains,sofle_J)
+
