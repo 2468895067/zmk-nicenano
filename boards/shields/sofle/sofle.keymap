@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 // #define ZMK_POINTING_DEFAULT_MOVE_VAL 400  
 // default: 600
 // #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    
@@ -27,12 +26,12 @@
     };
 
     behaviors {
-      skq: sticky_key_quick_release {
-        compatible = "zmk,behavior-sticky-key";
-        #binding-cells = <1>;
-        bindings = <&kp>;
-        release-after-ms = <2000>;
-      };
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <2000>;
+        };
     };
 
     keymap {
@@ -40,10 +39,55 @@
 
         default_layer {
             bindings = <
-&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &kp CAPS        
-&kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
-&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
-&kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
+&mkp MB1   &kp ESCAPE    &mmv MOVE_Y(-1200)  &mmv MOVE_X(1200)  &mmv MOVE_X(-1200)  &mmv MOVE_Y(1200)        
+&to 2  &kp LEFT_WIN  &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW
+&kp ENTER  &kp LEFT_ALT  &kp DELETE         &mkp MB4          &kp A              &kp TAB                 
+&mo 5  &mo 1         &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_UP
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &trans  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mmv MOVE_UP        
+&trans  &trans  &trans         &trans    &trans   &trans
+&trans  &trans  &trans          &trans          &trans           &trans              
+&trans  &trans  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&mo 3  &kp LCTRL       &kp S  &kp A  &kp D  &kp W        
+&studio_unlock  &kp BACKSPACE  &kp V  &kp I  &kp O  &kp V
+&mo 4  &kp LEFT_SHIFT  &kp Z  &kp J  &kp L  &kp K        
+&to 0           &kp SPACE      &kp N  &kp Q  &kp M  &kp P
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &kp X  &kp COMMA  &kp PERIOD  &kp Y        
+&trans  &trans  &kp G           &kp C           &kp H            &kp E
+&trans  &trans  &kp B  &kp R      &kp F       &kp T        
+&trans  &trans  &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp GRAVE  &trans  &kp SLASH     &kp SEMICOLON  &kp SQT       &kp NON_US_BACKSLASH        
+&trans  &kp NUMBER_5  &kp MINUS     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
+&trans     &trans  &kp NUMBER_7  &kp NUMBER_9   &kp NUMBER_0  &kp NUMBER_8                
+&trans  &kp NUMBER_6  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans        &trans      &trans  &trans              
+&trans  &trans  &trans        &mkp MB4      &trans        &trans
+&trans  &trans  &bt BT_SEL 0  &bt BT_CLR  &trans  &bt BT_SEL 5        
+&trans  &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
             >;
         };
     };
