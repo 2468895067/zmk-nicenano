@@ -19,47 +19,44 @@
 
 
 
-&adc {
-	status = "okay";
-};
+// &adc {
+// 	status = "okay";
+// };
 
-/ {
-
-	// MOUSE MOVE
-	anin1: analog_input_1 {
-		compatible = "zmk,analog-input";
-		sampling-hz = <100>;
-		x-ch {
-			io-channels = <&adc 0>;
-			mv-mid = <1650>;
-			mv-min-max = <10>;
-			mv-deadzone = <400>;
-			scale-multiplier = <2>;
-			scale-divisor = <3>;
-			invert;
-			evt-type = <INPUT_EV_REL>;
-			input-code = <INPUT_REL_X>;
-		};
-		y-ch {
-			io-channels = <&adc 5>;
-			mv-mid = <1650>;
-			mv-min-max = <10>;
-			mv-deadzone = <400>;
-			scale-multiplier = <2>;
-			scale-divisor = <3>;
-			invert;
-			evt-type = <INPUT_EV_REL>;
+/* 
+ * / {
+ * 	// MOUSE MOVE
+ * 	anin1: analog_input_1 {
+ * 		compatible = "zmk,analog-input";
+ * 		sampling-hz = <100>;
+ * 		x-ch {
+ * 			io-channels = <&adc 0>;
+ * 			mv-mid = <1650>;
+ * 			mv-min-max = <10>;
+ * 			mv-deadzone = <400>;
+ * 			scale-multiplier = <2>;
+ * 			scale-divisor = <3>;
+ * 			invert;
+ * 			evt-type = <INPUT_EV_REL>;
+ * 			input-code = <INPUT_REL_X>;
+ * 		};
+ * 		y-ch {
+ * 			io-channels = <&adc 5>;
+ * 			mv-mid = <1650>;
+ * 			mv-min-max = <10>;
+ * 			mv-deadzone = <400>;
+ * 			scale-multiplier = <2>;
+ * 			scale-divisor = <3>;
+ * 			invert;
+ * 			evt-type = <INPUT_EV_REL>;
 			input-code = <INPUT_REL_Y>;
-		};
-	};
-
-};
-
-/ {
-        // MOUSE MOVE
-        joystick_listener_1 {
-            status = "okay";
-            compatible = "zmk,input-listener";
-            device = <&anin1>;
-        };
-};
+ * 		};
+ * 	};
+ *      // MOUSE MOVE
+ *         joystick_listener_1 {
+ *             status = "okay";
+ *             compatible = "zmk,input-listener";
+ *             device = <&anin1>;
+ *         };
+ * };
+ */
