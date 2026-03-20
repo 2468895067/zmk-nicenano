@@ -39,7 +39,22 @@
 
         MMVUP {
             bindings = <&mmv MOVE_UP>;
-            key-positions = <2>;
+            key-positions = <5 7>;
+        };
+
+        MMVDN {
+            bindings = <&mmv MOVE_DOWN>;
+            key-positions = <2 7>;
+        };
+
+        MMVLF {
+            bindings = <&mmv MOVE_LEFT>;
+            key-positions = <3 7>;
+        };
+
+        MMVRG {
+            bindings = <&mmv MOVE_RIGHT>;
+            key-positions = <4 7>;
         };
     };
 
@@ -55,8 +70,8 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mmv MOVE_UP        &trans  &trans  &trans         &trans    &trans   &trans
-&trans  &trans  &trans          &trans          &trans           &trans              &trans  &trans  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP
+&trans  &trans  &none   &none   &none   &none         &trans  &trans  &trans         &trans    &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP
             >;
         };
 
