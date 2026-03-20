@@ -34,20 +34,44 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        MMVUP {
+            bindings = <&mmv MOVE_UP>;
+            key-positions = <5 7>;
+        };
+
+        MMVDN {
+            bindings = <&mmv MOVE_DOWN>;
+            key-positions = <2 7>;
+        };
+
+        MMVLF {
+            bindings = <&mmv MOVE_LEFT>;
+            key-positions = <3 7>;
+        };
+
+        MMVRG {
+            bindings = <&mmv MOVE_RIGHT>;
+            key-positions = <4 7>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&to 2     &kp LEFT_WIN  &mmv MOVE_Y(-1200)  &mmv MOVE_X(1200)  &mmv MOVE_X(-1200)  &mmv MOVE_Y(1200)        &mo 5      &mo 1         &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW
+&to 2     &kp LEFT_WIN  &mmv MOVE_Y(1800)  &mmv MOVE_X(-1800)  &mmv MOVE_X(1800)  &mmv MOVE_Y(-1800)        &mo 5      &mo 1         &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW
 &mkp MB1  &kp ESCAPE    &kp DELETE          &mkp MB4           &kp A               &kp TAB                  &kp ENTER  &kp LEFT_ALT  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_UP
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mmv MOVE_UP        &trans  &trans  &trans         &trans    &trans   &trans
-&trans  &trans  &trans          &trans          &trans           &trans              &trans  &trans  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP
+&trans  &trans  &none   &none   &none   &none         &trans  &trans  &trans         &trans    &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP
             >;
         };
 
