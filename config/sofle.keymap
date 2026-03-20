@@ -53,7 +53,7 @@
         };
 
         MMVRG {
-            bindings = <&mmv MOVE_RIGHT>;
+            bindings = <&kp U>;
             key-positions = <4 7>;
         };
     };
@@ -77,7 +77,7 @@
 
         layer_2 {
             bindings = <
-&studio_unlock  &kp BACKSPACE   &kp S  &kp A  &kp D  &kp W        &to 0  &kp SPACE  &kp V  &kp I  &kp O  &kp V
+&studio_unlock  &kp BACKSPACE   &kp S  &kp A  &kp D  &kp W        &to 0  &kp SPACE  &kp U  &kp I  &kp O  &kp V
 &mo 3           &kp LEFT_SHIFT  &kp Z  &kp J  &kp L  &kp K        &mo 4  &kp LCTRL  &kp N  &kp Q  &kp M  &kp P
             >;
         };
