@@ -34,6 +34,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        MMVUP {
+            bindings = <&mmv MOVE_UP>;
+            key-positions = <2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
