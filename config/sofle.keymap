@@ -34,33 +34,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        MMVUP {
-            timeout-ms = <10000>;
-            bindings = <&mmv MOVE_UP>;
-            key-positions = <5 7>;
-        };
-
-        MMVDN {
-            timeout-ms = <10000>;
-            bindings = <&mmv MOVE_DOWN>;
-            key-positions = <2 7>;
-        };
-
-        MMVLF {
-            timeout-ms = <10000>;
-            bindings = <&mmv MOVE_LEFT>;
-            key-positions = <3 7>;
-        };
-
-        MMVRG {
-            timeout-ms = <10000>;
-            bindings = <&mmv MOVE_RIGHT>;
-            key-positions = <4 7>;
-        };
-    };
+   
 
     keymap {
         compatible = "zmk,keymap";
@@ -74,8 +48,8 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &none   &none   &none   &none         &trans  &trans  &trans         &trans    &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP
+&trans  &trans  &mmv MOVE_Y(500)  &mmv MOVE_X(-500)  &mmv MOVE_X(500)  &mmv MOVE_Y(-500)         &trans  &trans  &trans         &trans    &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP
             >;
         };
 
