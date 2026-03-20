@@ -38,21 +38,25 @@
         compatible = "zmk,combos";
 
         MMVUP {
+            timeout-ms = <10000>;
             bindings = <&mmv MOVE_UP>;
             key-positions = <5 7>;
         };
 
         MMVDN {
+            timeout-ms = <10000>;
             bindings = <&mmv MOVE_DOWN>;
             key-positions = <2 7>;
         };
 
         MMVLF {
+            timeout-ms = <10000>;
             bindings = <&mmv MOVE_LEFT>;
             key-positions = <3 7>;
         };
 
         MMVRG {
+            timeout-ms = <10000>;
             bindings = <&mmv MOVE_RIGHT>;
             key-positions = <4 7>;
         };
@@ -77,7 +81,7 @@
 
         layer_2 {
             bindings = <
-&studio_unlock  &kp BACKSPACE   &kp S  &kp A  &kp D  &kp W        &to 0  &kp SPACE  &kp V  &kp I  &kp O  &kp V
+&studio_unlock  &kp BACKSPACE   &kp S  &kp A  &kp D  &kp W        &to 0  &kp SPACE  &kp U  &kp I  &kp O  &kp V
 &mo 3           &kp LEFT_SHIFT  &kp Z  &kp J  &kp L  &kp K        &mo 4  &kp LCTRL  &kp N  &kp Q  &kp M  &kp P
             >;
         };
