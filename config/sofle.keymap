@@ -38,22 +38,26 @@
         compatible = "zmk,combos";
 
         MMVUP {
+            timeout-ms = <10000>;
             bindings = <&mmv MOVE_UP>;
             key-positions = <5 7>;
         };
 
         MMVDN {
+            timeout-ms = <10000>;
             bindings = <&mmv MOVE_DOWN>;
             key-positions = <2 7>;
         };
 
         MMVLF {
+            timeout-ms = <10000>;
             bindings = <&mmv MOVE_LEFT>;
             key-positions = <3 7>;
         };
 
         MMVRG {
-            bindings = <&kp U>;
+            timeout-ms = <10000>;
+            bindings = <&mmv MOVE_RIGHT>;
             key-positions = <4 7>;
         };
     };
