@@ -40,44 +40,56 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <
-&to 2     &kp LEFT_WIN  &mmv MOVE_Y(1800)  &mmv MOVE_X(-1800)  &mmv MOVE_X(1800)  &mmv MOVE_Y(-1800)        &mo 5      &mo 1         &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW
-&mkp MB1  &kp ESCAPE    &kp DELETE          &mkp MB4           &kp A               &kp TAB                  &kp ENTER  &kp LEFT_ALT  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_UP
+            bindings = <        
+&mo 5      &mo 1         &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  
+&to 2     &kp LEFT_WIN  &mmv MOVE_X(1800)  &mmv MOVE_Y(1800)  &mmv MOVE_Y(-1800)  &mmv MOVE_X(-1800)  
+&mkp MB1  &kp ESCAPE         &mkp MB4       &kp TAB      &kp DELETE       &kp A                             
+&kp ENTER  &kp LEFT_ALT   &msc SCRL_LEFT  &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT 
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &mmv MOVE_Y(500)  &mmv MOVE_X(-500)  &mmv MOVE_X(500)  &mmv MOVE_Y(-500)         &trans  &trans  &trans         &trans    &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP
+&trans  &trans  &trans         &trans    &trans   &trans
+&trans  &trans  &mmv MOVE_X(500)  &mmv MOVE_Y(500)  &mmv MOVE_Y(-500)  &mmv MOVE_X(-500)         
+&trans  &trans  &trans  &trans  &trans  &trans                                                        
+&trans  &trans  &kp HOME  &kp PAGE_UP &kp PAGE_DOWN  &kp END 
             >;
         };
 
         layer_2 {
             bindings = <
-&studio_unlock  &kp BACKSPACE   &kp S  &kp A  &kp D  &kp W        &to 0  &kp SPACE  &kp U  &kp I  &kp O  &kp V
-&mo 3           &kp LEFT_SHIFT  &kp Z  &kp J  &kp L  &kp K        &mo 4  &kp LCTRL  &kp N  &kp Q  &kp M  &kp P
+&to 0              &kp SPACE  &kp O  &kp V  &kp U  &kp I
+&studio_unlock  &kp BACKSPACE   &kp D  &kp S  &kp W  &kp A        
+&mo 3           &kp LEFT_SHIFT  &kp J  &kp K  &kp Z  &kp L        
+&mo 4              &kp LCTRL  &kp Q &kp P  &kp N  &kp M 
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &kp X  &kp COMMA  &kp PERIOD  &kp Y        &trans  &trans  &kp G           &kp C           &kp H            &kp E
-&trans  &trans  &kp B  &kp R      &kp F       &kp T        &trans  &trans  &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW
+&trans  &trans  &kp H            &kp G     &kp E      &kp C           
+&trans  &trans    &kp PERIOD   &kp X      &kp Y     &kp COMMA      
+&trans  &trans      &kp R        &kp T  &kp B              &kp F   
+&trans  &trans   &kp LEFT_ARROW  &kp UP_ARROW &kp DOWN_ARROW  &kp RIGHT_ARROW 
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &kp NUMBER_5  &kp SLASH     &kp SEMICOLON  &kp SQT       &kp NON_US_BACKSLASH        &trans     &kp NUMBER_6  &kp MINUS     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
-&trans  &trans        &kp NUMBER_7  &kp NUMBER_9   &kp NUMBER_0  &kp NUMBER_8                &kp GRAVE  &trans        &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4
+&trans     &kp NUMBER_6    &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL  &kp LEFT_BRACKET  
+&trans      &kp NUMBER_5  &kp SQT      &kp SLASH            &kp NON_US_BACKSLASH      &kp SEMICOLON       
+&trans      &trans       &kp NUMBER_9        &kp NUMBER_8     &kp NUMBER_7     &kp NUMBER_0      
+&kp GRAVE  &trans      &kp NUMBER_2         &kp NUMBER_4     &kp NUMBER_1    &kp NUMBER_3   
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans        &trans      &trans  &trans              &trans  &trans  &trans        &mkp MB4      &trans        &trans
-&trans  &trans  &bt BT_SEL 0  &bt BT_CLR  &trans  &bt BT_SEL 5        &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans        &mkp MB4      &trans        &trans
+&trans  &trans  &trans        &trans      &trans  &trans              
+&trans  &trans  &bt BT_CLR   &bt BT_SEL 5  &bt BT_SEL 0   &trans       
+&trans  &trans  &bt BT_SEL 2   &bt BT_SEL 4  &bt BT_SEL 1 &bt BT_SEL 3 
             >;
         };
     };
