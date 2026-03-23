@@ -39,7 +39,7 @@
 
         default_layer {
             bindings = <
-&mo 5         &to 2      &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW        &kp ESCAPE    &mo 1      &mmv MOVE_X(1800)  &mmv MOVE_Y(1800)  &mmv MOVE_Y(-1800)  &mmv MOVE_X(-1800)
+&mo 1         &to 2      &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW        &kp ESCAPE    &mo 5      &mmv MOVE_X(1800)  &mmv MOVE_Y(1800)  &mmv MOVE_Y(-1800)  &mmv MOVE_X(-1800)
 &kp LEFT_ALT  &kp ENTER  &mkp MB4         &kp TAB         &kp DELETE    &kp A                 &kp LEFT_WIN  &mkp LCLK  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN      &msc SCRL_RIGHT
             >;
         };
