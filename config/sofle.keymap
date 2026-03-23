@@ -39,7 +39,7 @@
 
         default_layer {
             bindings = <
-&mo 1         &to 2      &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW        &kp ESCAPE    &mo 5      &mmv MOVE_X(1800)  &mmv MOVE_Y(1800)  &mmv MOVE_Y(-1800)  &mmv MOVE_X(-1800)
+&mo 1         &to 2      &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW        &kp ESCAPE    &mo 5      &mmv MOVE_X(2800)  &mmv MOVE_Y(2800)  &mmv MOVE_Y(-2800)  &mmv MOVE_X(-2800)
 &kp LEFT_ALT  &kp ENTER  &mkp MB4         &kp TAB         &kp DELETE    &kp A                 &kp LEFT_WIN  &mkp LCLK  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN      &msc SCRL_RIGHT
             >;
         };
@@ -54,28 +54,28 @@
         layer_2 {
             bindings = <
 &kp LEFT_SHIFT  &studio_unlock  &kp O  &kp V  &kp U  &kp I        &kp LCTRL  &to 0  &kp D  &kp S  &kp W  &kp A
-&kp BACKSPACE   &mo 4           &kp J  &kp K  &kp Z  &kp L        &kp SPACE  &mo 3  &kp Q  &kp P  &kp N  &kp M
+&kp BACKSPACE   &mo 4           &kp Q  &kp P  &kp N  &kp M        &kp SPACE  &mo 3  &kp J  &kp K  &kp Z  &kp L
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &kp H  &kp G  &kp E  &kp C        &trans  &trans  &kp PERIOD      &kp X         &kp Y           &kp COMMA
-&trans  &trans  &kp R  &kp T  &kp B  &kp F        &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans  &trans  &kp PERIOD      &kp X         &kp Y           &kp COMMA        &trans  &trans  &kp H  &kp G  &kp E  &kp C        
+&trans  &trans  &kp LEFT_ARROW  &kp ESCAPE    &kp DELETE      &kp RIGHT_ARROW  &trans  &trans  &kp R  &kp T  &kp B  &kp F        
             >;
         };
 
         layer_4 {
             bindings = <
 &trans        &trans     &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET        &trans        &trans  &kp SQT       &kp SLASH     &kp NON_US_BACKSLASH  &kp SEMICOLON
-&kp NUMBER_6  &kp GRAVE  &kp NUMBER_9       &kp NUMBER_8  &kp NUMBER_7  &kp NUMBER_0            &kp NUMBER_5  &trans  &kp NUMBER_2  &kp NUMBER_4  &kp NUMBER_1          &kp NUMBER_3
+&kp NUMBER_6  &kp GRAVE  &kp NUMBER_2  &kp NUMBER_4  &kp NUMBER_1          &kp NUMBER_3         &kp NUMBER_5  &trans  &kp NUMBER_9       &kp NUMBER_8  &kp NUMBER_7  &kp NUMBER_0    
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans
-&trans  &trans  &bt BT_CLR  &bt BT_SEL 5  &bt BT_SEL 0  &trans        &trans  &trans  &bt BT_SEL 2  &bt BT_SEL 4  &bt BT_SEL 1  &bt BT_SEL 3
+&trans  &trans  &trans      &trans        &trans        &trans         &trans  &trans  &trans        &trans        &trans        &trans
+&trans  &trans  &bt BT_SEL 2  &bt BT_SEL 4  &bt BT_SEL 1  &bt BT_SEL 3 &trans  &trans  &bt BT_CLR  &bt BT_SEL 5  &bt BT_SEL 0  &trans        
             >;
         };
     };
